@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/juggling-objects">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        This is dangerous
+      </h1>
+
+      <form method="post" action="/check-your-answers">
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          You should wear fire-proof clothes.
+        </strong>
+      </div>
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+</form>
+    </div>
+  </div>
+
+{% endblock %}
